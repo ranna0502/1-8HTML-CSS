@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  width: 960px;
+  margin: 50px auto;
+}
+
+.item-list{
+  margin-bottom:50px ;
+  list-style: none;
+}
+
+.item{
+  padding: 20px;
+}
+
+.item:nth-child(odd){
+  background-color: #eee;
+}
+
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  background-color: #ffd700;
+  width: 30%;
+  height: 200px;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+.box:nth-child(1){
+  background-color: orange;
+}
+
+.box:nth-child(5){
+  background-color: orange;
+}
+
+.box:nth-child(9){
+  background-color: orange;
+}
+
+.box:nth-child(3n){ /*一番右のBoxは右側余白必要ないため*/
+  margin-right: 0;
+}
+
+.box:nth-last-child(-n + 3){ /*一番下のBoxは余白が必要ないため*/
+  margin-bottom: 0;
+}
+
